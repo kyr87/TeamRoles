@@ -122,6 +122,7 @@ namespace TeamRoles.Controllers
             StudentViewModel model = new StudentViewModel();
             model.AverageGrade = repository.GetAverageGrade(student);
             model.TotalAbsences = repository.GetTotalAbsences(student);
+            model.Age = repository.GetAge(student);
             model.student = student;
             return View(model);
         }

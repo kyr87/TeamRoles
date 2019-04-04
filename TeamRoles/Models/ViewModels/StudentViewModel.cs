@@ -10,5 +10,6 @@ namespace TeamRoles.Models.ViewModels
         public ApplicationUser student { get; set; }
         public Double AverageGrade { get; set; }
         public int TotalAbsences { get; set; }
+        public int Age { get; set; }
     }
 }

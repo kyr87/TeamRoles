@@ -530,5 +530,18 @@ namespace TeamRoles.Repositories
             }
             return count;
         }
+
+        /// <summary>
+        /// Returns the age of a user based on his birthday
+        /// </summary>
+        /// <param name="user">the user</param>
+        /// <returns>int age</returns>
+        public int GetAge(ApplicationUser user)
+        {
+            DateTime today = DateTime.Today;
+            double age = today.Subtract(user.BirthDay).TotalDays;
+            age = age / 365;
+            return  (int)Math.Round(age);
+        }
     }
 }

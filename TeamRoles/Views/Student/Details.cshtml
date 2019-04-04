@@ -44,6 +44,12 @@
         <dd>
             @Model.TotalAbsences
         </dd>
+        <dt>
+            Age
+        </dt>
+        <dd>
+            @Model.Age
+        </dd>
         <dd>
             <table class="table">
                 <tr>
@@ -51,6 +57,7 @@
                     <th>Teacher</th>
                     <th>Grade</th>
                     <th>Absences</th>
+                    <th>Age</th>
                 </tr>
                 @foreach (var item in Model.student.Enrollments)
                 {
